@@ -1,12 +1,31 @@
 import languages from "../data/languages";
 import Button from "./Button";
-import Card from "./Card"
+import Card from "./card";
 
 
 const Main = () => {
     return(
-        <h1>Cuerpo</h1>
+
+        <>
+
+        {
+            languages.map( ( element )  => {
+                return (
+                    <Button key={element.id} title={element.title} />
+
+                )
+
+            } )
+        }
         
+        <Card/>
+
+
+
+        </>
+
+
+
 
     )
 
