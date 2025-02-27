@@ -1,6 +1,11 @@
 const Header = () => {
     return(
-        <h1>Cabeza</h1>
+        <nav className="navbar bg-body-ternary mb-4">
+            <div className="container-fluid">
+                <h1>Learn Web Development</h1>
+            </div>
+
+        </nav>
 
     )
 
