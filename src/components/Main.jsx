@@ -5,9 +5,9 @@ import Card from "./card";
 import { useState } from "react";
 
 const Main = () => {
-    const [selectedLanguage, setselectedLanguage] = useState ( null )
+    const [selectedLanguage, setselectedLanguage] = useState( null )
 
-    const renderLanguage = () => languages.map ( (languages) => {
+    const renderLanguage = () => languages.map ( (language) => {
         const active = selectedLanguage === language 
         return (
             <Button key={language.id} isActive={active} title={language.title} selected={() => setselectedLanguage(language) } />

@@ -3,9 +3,11 @@ const Card = () =>{
         <div className="card">
             <div className="card-body">
                 <div className="card-title">
+                    {title}
 
                 </div>
                 <p className="card-text">
+                    {description}
 
                 </p>
 
